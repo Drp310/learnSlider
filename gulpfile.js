@@ -1,10 +1,14 @@
-const gulp = require('gulp')
+const {src,dest, watch } = require('gulp')
 const pug = require('gulp-pug')
 const del = require('del')
 
 function puging(){
-    return(gulp.src('index.pug'))
+    return(src('index.pug'))
     .pipe(pug())
-    .pipe(gulp.dest('code'))
+    .pipe(dest('code'))
+}
+function watching(){
+    watch(['index.pug'],puging);
 }
 exports.puging = puging
+exports.watching = watching
