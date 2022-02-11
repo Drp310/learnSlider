@@ -1,4 +1,4 @@
-const {src,dest, watch } = require('gulp')
+const {src,dest, watch,parallel } = require('gulp')
 const pug = require('gulp-pug')
 const del = require('del')
 const scss = require('gulp-sass')(require('sass'));
@@ -14,7 +14,14 @@ function puging(){
 }
 function watching(){
     watch(['index.pug'],puging);
+
 }
+function watching1(){
+    watch(['style.scss'],styling);
+    
+}
+exports.all = parallel(watching,watching1)
+exports.watching1 = watching1
 exports.puging = puging
 exports.watching = watching
 exports.styling = styling

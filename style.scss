@@ -1,7 +1,87 @@
-.dev {
-  max-resolution: 10;
-  color: red;
-  a {
-    text-align: center;
-  }
+* {
+  box-sizing: border-box;
 }
+.slider {
+  margin: 0 auto;
+  border: 3px solid black;
+  width: 1050px;
+  height: 700px;
+}
+.slider_true {
+  border: 3px solid rgb(233, 17, 17);
+}
+.btn {
+  //margin: 0 auto;
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  border: blue 3px solid;
+}
+.buttons {
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+}
+
+.slider_window {
+  margin: 0 auto;
+  width: 256px;
+  height: 256px;
+  border: rgba(0, 128, 128, 0.1) solid 3px;
+  overflow: hidden;
+}
+.pictures {
+  display: flex;
+  position: relative;
+  left: 0px;
+}
+
+.kvadro {
+  transform: translate(120px, 50%);
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+input {
+  color: white;
+  width: 305px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.thumb {
+  height: 75px;
+  width: 60px;
+  background-image: url(../images/cenya_final.png);
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transform: translate(-44%, 10%);
+  padding: 2px;
+  pointer-events: none;
+}
+.bar {
+  border: 2px solid rgba(255, 99, 71, 0.3);
+  background-color: rgb(223, 219, 30);
+  width: 0%;
+  height: 50px;
+}
+.full {
+  width: 305px;
+  height: 100%;
+  background-color: rgba(184, 134, 11, 0.3);
+}
+// input::-webkit-slider-thumb {
+//   -webkit-appearance: none;
+//   height: 20px;
+//   width: 20px;
+//   background: none;
+//   cursor: pointer;
+//   touch-action: pan-y;
+// }
