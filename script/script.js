@@ -6,7 +6,7 @@ let input = document.querySelector('input')
 let  thumb = document.querySelector('.thumb')
 let bar = document.querySelector('.bar')
 next_button.addEventListener('click',()=>{
-    position = (position - 256)%1024;
+    position = (position - 256)%768;
     a.style.left = position + 'px';
     
 

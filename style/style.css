@@ -60,14 +60,14 @@ input {
 }
 
 .thumb {
-  height: 75px;
-  width: 60px;
-  background-image: url(../images/cenya_final.png);
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/circle.png);
   background-size: cover;
   position: absolute;
   top: 0%;
   left: 0;
-  transform: translate(-44%, 10%);
+  transform: translate(-52%, 79%);
   padding: 2px;
   pointer-events: none;
 }
@@ -80,7 +80,20 @@ input {
 }
 
 .full {
-  width: 305px;
+  width: 299px;
   height: 100%;
   background-color: rgba(184, 134, 11, 0.3);
+}
+
+.real_buttons {
+  display: none;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: none;
+  cursor: pointer;
+  touch-action: pan-y;
 }
